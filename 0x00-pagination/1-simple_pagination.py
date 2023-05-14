@@ -5,6 +5,7 @@ import csv
 import math
 from typing import List
 
+
 def index_range(page: int, page_size: int) -> tuple:
     """does what the comment says"""
     last_idx = page * page_size
@@ -40,4 +41,3 @@ class Server:
 
         st_idx, end_idx = index_range(page, page_size)
         return self.dataset()[st_idx:end_idx]
-
