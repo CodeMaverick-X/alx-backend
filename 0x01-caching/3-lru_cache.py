@@ -19,6 +19,7 @@ class LRUCache(BaseCaching):
         self.cache_age = {}
 
     def put(self, key, item):
+        """cache value with key"""
         self.cache_age[key] = LRUCache.count = LRUCache.count + 1
         min_v = min(list(self.cache_age.values()))
 
