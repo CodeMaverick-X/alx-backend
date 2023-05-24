@@ -18,6 +18,7 @@ class Config(object):
 
 app.config.from_object(Config)
 
+
 @app.route('/')
 def basic_app():
     """basic flask app to retrun index"""
