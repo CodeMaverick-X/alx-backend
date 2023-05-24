@@ -27,6 +27,7 @@ def basic_app():
 
 @babel.localeselector
 def get_locale():
+    """get the default lan from usr"""
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
