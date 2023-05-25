@@ -2,7 +2,7 @@
 """
 module: flask app and babel app
 """
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_babel import Babel
 
 app = Flask(__name__)
@@ -22,7 +22,7 @@ app.config.from_object(Config)
 @app.route('/')
 def basic_app():
     """basic flask app to retrun index"""
-    return render_template('1-index.html')
+    return render_template('3-index.html')
 
 
 @babel.localeselector
